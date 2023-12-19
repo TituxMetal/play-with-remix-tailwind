@@ -1,4 +1,4 @@
-import type { LinksFunction } from '@remix-run/node'
+import  { type LinksFunction } from '@remix-run/node'
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
 import tailwindStylesheetLink from '~/tailwind.css'
