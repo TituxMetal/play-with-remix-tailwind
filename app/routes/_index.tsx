@@ -1,4 +1,4 @@
-import { Bars3Icon } from '@heroicons/react/24/outline'
+import { ChevronRightIcon } from '@heroicons/react/24/outline'
 import { type MetaFunction } from '@remix-run/node'
 
 export const meta: MetaFunction = () => {
@@ -12,10 +12,17 @@ export default function Index() {
       <p className='text-2xl'>Welcome to your new Remix app.</p>
       <p className='text-2xl'>
         Lets go for a{' '}
-        <Bars3Icon className='inline-block h-8 w-8 cursor-pointer rounded-full border border-success p-1 text-green-400 hover:border-accent hover:text-accent' />{' '}
+        <ChevronRightIcon className='inline-block size-8 cursor-pointer rounded-full border border-success p-1 text-green-400 hover:border-accent hover:text-accent' />{' '}
         !
       </p>
-      <section className='flex gap-6'>
+      <div>
+        <ul className='flex space-x-4 *:rounded-full *:border-sky-100 *:bg-sky-50 *:px-4 *:py-2 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10'>
+          <li>Sales</li>
+          <li>Marketing</li>
+          <li>SEO</li>
+        </ul>
+      </div>
+      <section className='flex gap-6 *:rounded-md *:border-2 *:border-neutral-300'>
         <button className='btn'>Button</button>
         <button className='btn btn-neutral'>Neutral</button>
         <button className='btn btn-primary'>Primary</button>
